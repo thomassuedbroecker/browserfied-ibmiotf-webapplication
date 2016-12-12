@@ -9,7 +9,7 @@ user="YOUR BLUEMIX ID"
 bluemix_api="https://api.YOUR BLUEMIX API"
 organization_name="YOUR BLUEMIX ORGANIZATION"
 space_name="YOUR BLUEMIX SPACE"
-application_name="YOUR BLUEMIX APPLICATION NAME"
+application_name="browserfied-ibmiotf-webapplication"
 
 echo "--> Ensure to deploy into the right bluemix region"
 echo "Insert your password:"

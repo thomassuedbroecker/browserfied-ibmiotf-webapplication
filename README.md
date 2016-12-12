@@ -37,7 +37,7 @@ All this is done by using [Browserify](http://browserify.org).
 
 You can download the code from github. Here is a overview of the basic folder structure of the project.
 
-1. **docs** folder does contain images for the readme.md file, bash utilities files and other documentations. **git-commit.sh** does commit to git and you only have to insert your comment. **git-create-version.sh** creates a version in git based on you tag. You will be asked for the version and your comment. **git-setup-rebase.sh** does all needed commands to do a setup and rebase for you. You will be asked for the input **git url **. **init-bash-scripts.sh** does the chmod command for all bash files in the docs folder, to make them executable. **push-and-log.sh** and **restage-and-log.sh** here you will be asked for you Bluemix password. You can configure the bash files with:
+1. **docs** folder does contain images for the readme.md file, bash utilities files and other documentations. **git-commit.sh** does commit to git and you only have to insert your comment. **git-create-version.sh** creates a version in git based on you tag. You will be asked for the version and your comment. **git-setup-rebase.sh** does all needed commands to do a setup and rebase for you. You will be asked for the input **git url **. **init-bash-scripts.sh** does the chmod command for all bash files in the docs folder, to make them executable. **push-and-log.sh**,  **restage-and-log.sh** and **start-sample.sh** here you will be asked for your Bluemix password. You can configure the bash files with:
 ```sh
     user="YOUR BLUEMIX ID"
     bluemix_api="https://api.YOUR BLUEMIX API"
@@ -196,14 +196,24 @@ your chrome browser. See the following picture:
 
 ### 3.3 Run the WebApplication using Node.JS local or in Node.JS on Bluemix
 
+If you have done all needed configurations you run the WebApplication,
+also by using the bash file **start-sample.sh** the file does all needed tasks:
+
+1. Install the needed **npm installation** for the WebApplication
+2. Create the **browserifed app.js** file
+3. Push the **node.js application** with the webapplication to bluemix
+
+Here are the
+
+_npm installation_
 In the **rootfolder/public** run the npm installation.
+To install all needed npm packages.
+
 ```sh
     rootfolder/public$ sudo npm install
     Password: *******
 ```
-
-
-
+_run the node js server with the WebApplication_
 To run the web application local you can start:
 ```sh
     project rootfolder$ node app.js
