@@ -38,7 +38,7 @@ All this is done by using [Browserify](http://browserify.org).
 
 You can download the code from github. Here is a overview of the basic folder structure of the project.
 
-1. **docs** folder does contain images for the readme.md file, bash utilities files and other documentations. **git-commit.sh** does commit to git and you only have to insert your comment. **git-create-version.sh** creates a version in git based on you tag. You will be asked for the version and your comment. **git-setup-rebase.sh** does all needed commands to do a setup and rebase for you. You will be asked for the input **git url **. **init-bash-scripts.sh** does the chmod command for all bash files in the docs folder, to make them executable. **push-and-log.sh**,  **restage-and-log.sh** and **start-sample.sh** here you will be asked for your Bluemix password. You can configure the bash files with:
+1. **docs** folder does contain images for the readme.md file, bash utilities files and other documentations. **git-commit.sh** does commit to git and you only have to insert your comment. **git-create-version.sh** creates a version in git based on your tag. You will be asked for the version and your comment. **git-setup-rebase.sh** does all needed commands to do a setup and rebase for you. You will be asked for the input **git url **. **init-bash-scripts.sh** does the chmod command for all bash files in the docs folder, to make them executable. **push-and-log.sh**,  **restage-and-log.sh** and **start-sample.sh** here you will be asked for your Bluemix password. You can configure the bash files with:
 ```sh
     user="YOUR BLUEMIX ID"
     bluemix_api="https://api.YOUR BLUEMIX API"
@@ -54,7 +54,7 @@ You can download the code from github. Here is a overview of the basic folder st
 
 5. **public/bin** contains bash utilities files and the ***MOST IMPORTANT*** is the **browserify.sh** file.
 
-6. **public/node_modules** his folder contains the npm installation for the AngluarJS Web Application, based on the _package.json_ in the project **root/public** folder. _NOTE:_ This can be used because of the usage of **browserify**.
+6. **public/node_modules** This folder contains the npm installation for the AngluarJS Web Application, based on the _package.json_ in the project **root/public** folder. _NOTE:_ This can be used because of the usage of **browserify**.
 
 _Note:_ **Before you begin.** The steps do only contain the information for a  MAC-OS System. Please install the cloud foundry command line interface available [here ](https://github.com/cloudfoundry/cli/releases) and install **node and npm** the information you can find [here ](https://docs.npmjs.com/getting-started/installing-node).
 
