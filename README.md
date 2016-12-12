@@ -12,7 +12,7 @@ You will see how this is possible by using [Browserify](http://browserify.org).
 2. Payload of the IoT devices
 3. Chart for the IoT devices
 
-![Running WebApplication](docs/running-application-on-local-node-js.png)
+![Running WebApplication](https://github.com/thomassuedbroecker/browserfied-ibmiotf-webapplication/blob/master/docs/running-application-on-local-node-js.png)
 
 ## 2 Used frameworks and runtimes
 
@@ -178,7 +178,7 @@ Using **updateData** to format the data for the chart and update with **iotChart
       });
 ```
 The image shows a simplified view of the webapplication which is using the _browserified app.js_ file and the content of the _browserified app.js_.
-![simplified-overview-of-the-dependencies](docs/simplified-overview-of-the-dependencies.png)
+![simplified-overview-of-the-dependencies](https://github.com/thomassuedbroecker/browserfied-ibmiotf-webapplication/blob/master/docs/simplified-overview-of-the-dependencies.png)
 
 ### 3.2 Create Browserified 'app.js' file
 
@@ -190,7 +190,7 @@ The this bash creates a **not minimized browserifed** in **public/app/dist/app.j
 You can debug the running webapplication like a normal WebApplication for example in
 your chrome. See the following picture:
 
-![Debug WebApplication](docs/debug-browserifed-application.png)
+![Debug WebApplication](https://github.com/thomassuedbroecker/browserfied-ibmiotf-webapplication/blob/master/docs/debug-browserifed-application.png)
 
 
 ### 3.3 Run the WebApplication using Node.JS local or in Node.JS on Bluemix
@@ -227,13 +227,13 @@ b) The **rootfolder/manifest.yml** file.
       disk_quota: 1024M
 ```
 This will create a the Cloud Foundry application.
-![Bluemix nodejs application ](docs/bluemix-nodejs-application.png)
+![Bluemix nodejs application ](https://github.com/thomassuedbroecker/browserfied-ibmiotf-webapplication/blob/master/docs/bluemix-nodejs-application.png)
 
 _Note:_ Do not forget to run ste 3.2 before running the appliction.
 
 ### 3.4 Check the WebApplication
 
 You can run following links:
-1. Shows the ToDo List sample: https://[YOUR HOST]/ ![Running WebApplication ToDo Sample ](docs/todo-sample.png)
-2. Shows the Payload of your devices: https://[YOUR HOST]/#!/iot ![Running WebApplication Payload of the Devices](docs/device-sample.png)
-2. Shows the Payload and the configured chart for your devices: https://[YOUR HOST]/#!/iotchart ![Running WebApplication Payload and Chart of the devices](docs/running-application-on-local-node-js.png)
+1. Shows the ToDo List sample: https://[YOUR HOST]/ ![Running WebApplication ToDo Sample ](https://github.com/thomassuedbroecker/browserfied-ibmiotf-webapplication/blob/master/docs/todo-sample.png)
+2. Shows the Payload of your devices: https://[YOUR HOST]/#!/iot ![Running WebApplication Payload of the Devices](https://github.com/thomassuedbroecker/browserfied-ibmiotf-webapplication/blob/master/docs/device-sample.png)
+2. Shows the Payload and the configured chart for your devices: https://[YOUR HOST]/#!/iotchart ![Running WebApplication Payload and Chart of the devices](https://github.com/thomassuedbroecker/browserfied-ibmiotf-webapplication/blob/master/docs/running-application-on-local-node-js.png)
