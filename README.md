@@ -31,7 +31,8 @@ All this is done by using [Browserify](http://browserify.org).
 7. **Command line interfaces** Cloud foundry command line interface available [here ](https://github.com/cloudfoundry/cli/releases) and **node and npm** you can find [here ](https://docs.npmjs.com/getting-started/installing-node).
 
 8. **Reuse** This project reused code from following git samples. One Sample is the accompanying blog post can be found at <https://blog.codecentric.de/en/2014/08/angularjs-browserify/> and the source can be found here:
-[![Build Status](https://travis-ci.org/basti1302/angular-browserify.png?branch=master)](https://travis-ci.org/angular-browserify/traverson). The other sample is the usage of the IBMIoTF usage in the iotreceiver sample of **Rene Meyer** in the git project which can be found here [iotreceiver](https://github.com/cloud-dach/iotreceiver).
+[![Build Status](https://travis-ci.org/basti1302/angular-browserify.png?branch=master)](https://travis-ci.org/angular-browserify/traverson). The other sample is the usage of the IBMIoTF usage in the iotreceiver sample of **Rene Meyer** in the git project which can be found here [iotreceiver](https://github.com/cloud-dach/iotreceiver). For my IoT Device information I use the [Build a connected-car IoT app with Geospatial Analytics](http://www.ibm.com/developerworks/library/mo-connectedcar-app/index.html) sample.
+
 
 ## 3. How to setup this sample?
 
