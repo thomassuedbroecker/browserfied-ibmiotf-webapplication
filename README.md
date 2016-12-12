@@ -20,7 +20,7 @@ You will see how this is possible by using [Browserify](http://browserify.org).
 
 2. **IoT Service** [As IoT Service the IBM Watson IoT in Bluemix is used.](https://console.ng.bluemix.net/catalog/services/internet-of-things-platform/?taxonomyNavigation=apps)
 
-3. **IBM IoT Sample API** [A library for developing device and application clients for IBM Watson IoT Platform](https://www.npmjs.com/package/ibmiotf)
+3. **IBM IoT API** [A library for developing device and application clients for IBM Watson IoT Platform](https://www.npmjs.com/package/ibmiotf)
 
 4. **Using browserify to reuse IBMIoTF** [Browserify lets you require('modules') in the browser by bundling up all of your dependencies.](http://browserify.org)
 
