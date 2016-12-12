@@ -229,7 +229,7 @@ b) The **rootfolder/manifest.yml** file.
 This will create a the Cloud Foundry application.
 ![Bluemix nodejs application ](https://github.com/thomassuedbroecker/browserfied-ibmiotf-webapplication/blob/master/docs/bluemix-nodejs-application.png)
 
-_Note:_ Do not forget to run ste 3.2 before running the appliction.
+_Note:_ Do not forget to run set 3.2 before running the application.
 
 ### 3.4 Check the WebApplication
 
