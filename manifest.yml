@@ -1,0 +1,8 @@
+applications:
+- path: .
+  memory: 256M
+  instances: 1
+  domain: eu-gb.mybluemix.net
+  name: browserfied-ibmiotf-webapplication
+  host: browserfied-ibmiotf-webapplication
+  disk_quota: 1024M

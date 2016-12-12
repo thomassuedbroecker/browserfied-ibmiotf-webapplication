@@ -1,0 +1,7 @@
+{
+    "org": "YOUR ORG",
+    "id": "YOUR_WEB_APPLICATION_ID", // you can define by yourself here
+    "auth-key": "YOUR_KEY_USER_ID",
+    "auth-token": "YOUR_TOKEN_USER_PASSWORD",
+    "type" : "shared" // do not change
+}

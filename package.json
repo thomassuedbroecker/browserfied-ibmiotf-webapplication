@@ -1,0 +1,24 @@
+{
+  "name": "browserfied-ibmiotf-webapplication",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "bower": "^1.8.0",
+    "cfenv": "1.0.x",
+    "cors": "^2.8.1",
+    "errorhandler": "^1.5.0",
+    "express": "4.13.x",
+    "http": "0.0.0",
+    "https": "^1.0.0",
+    "ibmiotf": "^0.2.29",
+    "morgan": "^1.7.0"
+  },
+  "repository": {},
+  "engines": {
+    "node": "4.x"
+  }
+}
