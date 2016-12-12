@@ -196,6 +196,14 @@ your chrome browser. See the following picture:
 
 ### 3.3 Run the WebApplication using Node.JS local or in Node.JS on Bluemix
 
+In the **rootfolder/public** run the npm installation.
+```sh
+    rootfolder/public$ sudo npm install
+    Password: *******
+```
+
+
+
 To run the web application local you can start:
 ```sh
     project rootfolder$ node app.js
