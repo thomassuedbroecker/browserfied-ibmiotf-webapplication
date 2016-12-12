@@ -1,24 +1,24 @@
 # Using the AngularJS + Browserify Project Template to implement a IBM IoTF WebApplication
 
-## 1 Objective using Browserify
+## 1. Objective using Browserify
 
-This sample will show how to use the IBMIoTF in Angluar Application running on a Node.JS Server, to show the device information in a chart and the basic payload which is given by devices.
+This sample will show how to use the IBMIoTF in Angluar Application running on a Node.JS Server. The WebApplication shows the device information in a chart and the basic payload by the given devices.
 Best in using **browserify** is you can **use npm for managing our libraries** also for the web application and **use the require statement** in your _angularjs_ code.
 
-You will see how this is possible by using [Browserify](http://browserify.org).
+All this is done by using [Browserify](http://browserify.org).
 
 **Here the sample WebApplication in action**
-1. Local URL
-2. Payload of the IoT devices
-3. Chart for the IoT devices
+0. Local URL
+1. Payload of the IoT devices
+2. Chart for the IoT devices
 
 ![Running WebApplication](https://github.com/thomassuedbroecker/browserfied-ibmiotf-webapplication/blob/master/docs/running-application-on-local-node-js.png)
 
-## 2 Used frameworks and runtimes
+## 2. Used frameworks and runtimes
 
 1. **Runtime** [As runtime the Node.JS server is used. This sample runs local or on a Bluemix Node.JS Application.](https://console.ng.bluemix.net/catalog/starters/sdk-for-nodejs/?taxonomyNavigation=apps)
 
-2. **IoT Service** [As IoT Service the IBM Watson IoT in Bluemix is used.](https://console.ng.bluemix.net/catalog/services/internet-of-things-platform/?taxonomyNavigation=apps)
+2. **IoT Service** [As the IoT Service the IBM Watson IoT in Bluemix is used.](https://console.ng.bluemix.net/catalog/services/internet-of-things-platform/?taxonomyNavigation=apps)
 
 3. **IBM IoT API** [A library for developing device and application clients for IBM Watson IoT Platform](https://www.npmjs.com/package/ibmiotf)
 
@@ -33,7 +33,7 @@ You will see how this is possible by using [Browserify](http://browserify.org).
 8. **Reuse** This project reused code from following git samples. One Sample is the accompanying blog post can be found at <https://blog.codecentric.de/en/2014/08/angularjs-browserify/> and the source can be found here:
 [![Build Status](https://travis-ci.org/basti1302/angular-browserify.png?branch=master)](https://travis-ci.org/angular-browserify/traverson). The other sample is the usage of the IBMIoTF usage in the iotreceiver sample of **Rene Meyer** in the git project which can be found here [iotreceiver](https://github.com/cloud-dach/iotreceiver).
 
-## 3 How to setup this sample?
+## 3. How to setup this sample?
 
 You can download the code from github. Here is a overview of the basic folder structure of the project.
 
@@ -69,7 +69,8 @@ only following the **3.1.2 chapter**.
 **Configure code**
 
 _Code in 'rootfolder/public/.ibmiotf.json'_
-Based on your configuration you have to configure the **rootfolder/public/.ibmiotf.json**
+Based on your configuration you have to configure the **rootfolder/public/.ibmiotf.json**.
+This file contains all login information which is used by the IBMIoTF library.
 
 ```javascript
       {
@@ -82,7 +83,7 @@ Based on your configuration you have to configure the **rootfolder/public/.ibmio
 ```
 
 _Code in rootfolder/public/app/js/controller/iot.js and rootfolder/public/app/js/controller/iotchart.js_
-In the WebApplication modules ***rootfolder/public/app/js/controller/iot.js*** and ***rootfolder/public/app/js/controller/iotchart.js*** you have to configure your device type information.
+In the WebApplication modules ***rootfolder/public/app/js/controller/iot.js*** and ***rootfolder/public/app/js/controller/iotchart.js*** you have to configure to apply your device type information.
 ```javascript
      var client = require('ibmiotf');
      var config = require("../../../.ibmiotf.json");
@@ -91,7 +92,7 @@ In the WebApplication modules ***rootfolder/public/app/js/controller/iot.js*** a
      var appClient = new client.IotfApplication(config);
 ```
 
-In the ***rootfolder/public/app/js/controller/iotchart.js*** you can change the labels for your IoT Information in the chart.
+In the ***rootfolder/public/app/js/controller/iotchart.js*** you can change the labels to apply to your IoT Information in the chart.
 ```javascript
      var chartData = {
           labels   : ["1","2","3","4","5", "6", "7", "8", "9", "10"],
@@ -117,7 +118,7 @@ In the ***rootfolder/public/app/js/controller/iotchart.js*** you can change the 
           ]
      };
 ```
-In the ***rootfolder/public/app/js/controller/iotchart.js*** you can change to the values you want to display as your IoT Information in the chart. In my case the payload of my device looks like this.
+In the ***rootfolder/public/app/js/controller/iotchart.js*** fyou can change to apply to your needs, to show the values you want to display, as your IoT Information in the chart. In my case the payload of my device looks like this.
 
 ```javascript
     [ {"id":"ABC123-1",
@@ -154,8 +155,8 @@ In the ***rootfolder/public/app/js/controller/iotchart.js*** you can change to t
     }]
 ```
 
-I configure the output for the chart here ***rootfolder/public/app/js/controller/iotchart.js*** file in the **var updateData = function(oldData,dataList)**
-This is defined based on my payload the values, in the chart you can see the value of the car **speed**.
+I configure the output for the chart in the ***rootfolder/public/app/js/controller/iotchart.js*** file, inside the variable **var updateData = function(oldData,dataList)**
+This is defined based on my payload the values, in the chart you can see the value of the 'car **speed**.'
 
 ```javascript
       var newDataA = dataList[0].speed; // YOUR PAYLOAD INFORMATION
@@ -184,11 +185,11 @@ The image shows a simplified view of the webapplication which is using the _brow
 
 To create the browserified **'app.js'** file for the usage in the WebApplication, run the bash file in **rootfolder/public/app/bin/browserify.sh**.
 ```sh
-    rootfolder$ ./browserify.sh
+    rootfolder/public/app/bin$ ./browserify.sh
 ```
 The this bash creates a **not minimized browserifed** in **public/app/dist/app.js**.
-You can debug the running webapplication like a normal WebApplication for example in
-your chrome. See the following picture:
+You can **debug** the running webapplication like a _normal_ WebApplication, for example in
+your chrome browser. See the following picture:
 
 ![Debug WebApplication](https://github.com/thomassuedbroecker/browserfied-ibmiotf-webapplication/blob/master/docs/debug-browserifed-application.png)
 
