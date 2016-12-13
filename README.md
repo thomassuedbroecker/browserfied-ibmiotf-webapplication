@@ -1,5 +1,14 @@
 # Using the AngularJS + Browserify Project Template to implement a IBM IoTF WebApplication
 
+**Content Overview**
+![1. Objective](https://github.com/thomassuedbroecker/browserfied-ibmiotf-webapplication#1-objective-using-browserify)
+![2. Used frameworks and runtimes](https://github.com/thomassuedbroecker/browserfied-ibmiotf-webapplication#2-used-frameworks-and-runtimes)
+![3. How to setup the sample?](https://github.com/thomassuedbroecker/browserfied-ibmiotf-webapplication#3-how-to-setup-this-sample)
+ ![3.1 Create a IBM watson service in bluemix and configure the code for a IoT Chart](https://github.com/thomassuedbroecker/browserfied-ibmiotf-webapplication#31-create-a-ibm-watson-service-in-bluemix-and-configure-the-code-ibm-iotfchartjs)
+ ![3.2 Create a the browserfied app.js file](https://github.com/thomassuedbroecker/browserfied-ibmiotf-webapplication#32-create-browserified-appjs-file)
+ ![3.3 Run the nodejs application local and on bluemix](https://github.com/thomassuedbroecker/browserfied-ibmiotf-webapplication#33-run-the-webapplication-using-nodejs-local-or-in-nodejs-on-bluemix)
+ ![3.4 Check the WebApplication](https://github.com/thomassuedbroecker/browserfied-ibmiotf-webapplication#34-check-the-webapplication)
+
 ## 1. Objective using Browserify
 
 This sample will show how to use the IBMIoTF in Angluar Application running on a Node.JS Server. The WebApplication shows the device information in a chart and the basic payload by the given devices.
@@ -179,12 +188,13 @@ Using **updateData** to format the data for the chart and update with **iotChart
           $scope.$apply();
       });
 ```
+
+**Simplified 'component dependencies' view of the webapplication**
 The image shows a simplified view of the webapplication which is using the _browserified app.js_ file and the content of the _browserified app.js_.
 ![simplified-overview-of-the-dependencies](https://github.com/thomassuedbroecker/browserfied-ibmiotf-webapplication/blob/master/docs/simplified-overview-of-the-dependencies.png)
 
+**Simplified 'sequence get iot data' view of the webapplication**
 In the diagram below you see a very simplified view: What happens inside the browserified app.js file?
-
-
 The blue objects inside are the _iofchart.html_ file and the _iofchart.js_ javascript module. The brown objects do represent the usage of the library **IBMIoTF** and **Chart.js**.
 
 The most **IoT relevant events** are the blue messages. These messages do representing the waiting for the **event connect** and **device event**. Inside these events we register to the devices to a specific type, we defined before and we using to payload of the devices events to show in our html page as simple message or in the chart.
