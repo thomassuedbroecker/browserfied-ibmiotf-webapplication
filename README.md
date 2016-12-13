@@ -8,6 +8,7 @@
  ![3.2 Create a the browserfied app.js file](https://github.com/thomassuedbroecker/browserfied-ibmiotf-webapplication#32-create-browserified-appjs-file)
  ![3.3 Run the nodejs application local and on bluemix](https://github.com/thomassuedbroecker/browserfied-ibmiotf-webapplication#33-run-the-webapplication-using-nodejs-local-or-in-nodejs-on-bluemix)
  ![3.4 Check the WebApplication](https://github.com/thomassuedbroecker/browserfied-ibmiotf-webapplication#34-check-the-webapplication)
+---
 
 ## 1. Objective using Browserify
 
@@ -22,6 +23,7 @@ All this is done by using [Browserify](http://browserify.org).
 2. Chart for the IoT devices
 
 ![Running WebApplication](https://github.com/thomassuedbroecker/browserfied-ibmiotf-webapplication/blob/master/docs/running-application-on-local-node-js.png)
+---
 
 ## 2. Used frameworks and runtimes
 
@@ -41,7 +43,7 @@ All this is done by using [Browserify](http://browserify.org).
 
 8. **Reuse** This project reused code from following git samples. One Sample is the accompanying blog post can be found at <https://blog.codecentric.de/en/2014/08/angularjs-browserify/> and the source can be found here:
 [![Build Status](https://travis-ci.org/basti1302/angular-browserify.png?branch=master)](https://travis-ci.org/angular-browserify/traverson). The other sample is the usage of the IBMIoTF usage in the iotreceiver sample of **Rene Meyer** in the git project which can be found here [iotreceiver](https://github.com/cloud-dach/iotreceiver). For my IoT Device information I use the [Build a connected-car IoT app with Geospatial Analytics](http://www.ibm.com/developerworks/library/mo-connectedcar-app/index.html) sample.
-
+---
 
 ## 3. How to setup this sample?
 
@@ -66,7 +68,7 @@ You can download the code from github. Here is a overview of the basic folder st
 6. **public/node_modules** This folder contains the npm installation for the AngluarJS Web Application, based on the _package.json_ in the project **root/public** folder. _NOTE:_ This can be used because of the usage of **browserify**.
 
 _Note:_ **Before you begin.** The steps do only contain the information for a  MAC-OS System. Please install the cloud foundry command line interface available [here ](https://github.com/cloudfoundry/cli/releases) and install **node and npm** the information you can find [here ](https://docs.npmjs.com/getting-started/installing-node).
-
+---
 ### 3.1 Create a IBM Watson Service in Bluemix and configure the code IBM IoTF/Chart.js
 
 **Create Service and configure service**
@@ -74,8 +76,7 @@ _Note:_ **Before you begin.** The steps do only contain the information for a  M
 
 To Configure the service you can follow the steps written in my other sample [3.1.2 Configure the Internet of Things Foundation Service]( https://github.com/thomassuedbroecker/iOSMQTT-Bluemix-IoT-NodeRED#312-configure-the-internet-of-things-foundation-service)
 only following the **3.1.2 chapter**.
-
-
+---
 **Configure code**
 
 _Code in 'rootfolder/public/.ibmiotf.json'_
@@ -91,7 +92,7 @@ This file contains all login information which is used by the IBMIoTF library.
           "type" : "shared" // do not change
       }
 ```
-
+---
 _Code in rootfolder/public/app/js/controller/iot.js and rootfolder/public/app/js/controller/iotchart.js_
 In the WebApplication modules ***rootfolder/public/app/js/controller/iot.js*** and ***rootfolder/public/app/js/controller/iotchart.js*** you have to configure to apply your device type information.
 ```javascript
@@ -101,7 +102,7 @@ In the WebApplication modules ***rootfolder/public/app/js/controller/iot.js*** a
      console.log(">>> In iot config ", config);
      var appClient = new client.IotfApplication(config);
 ```
-
+---
 In the ***rootfolder/public/app/js/controller/iotchart.js*** you can change the labels to apply to your IoT Information in the chart.
 ```javascript
      var chartData = {
@@ -128,6 +129,7 @@ In the ***rootfolder/public/app/js/controller/iotchart.js*** you can change the 
           ]
      };
 ```
+---
 In the ***rootfolder/public/app/js/controller/iotchart.js*** fyou can change to apply to your needs, to show the values you want to display, as your IoT Information in the chart. In my case the payload of my device looks like this.
 
 ```javascript
@@ -190,10 +192,12 @@ Using **updateData** to format the data for the chart and update with **iotChart
 ```
 
 **Simplified 'component dependencies' view of the webapplication**
+
 The image shows a simplified view of the webapplication which is using the _browserified app.js_ file and the content of the _browserified app.js_.
 ![simplified-overview-of-the-dependencies](https://github.com/thomassuedbroecker/browserfied-ibmiotf-webapplication/blob/master/docs/simplified-overview-of-the-dependencies.png)
 
 **Simplified 'sequence get iot data' view of the webapplication**
+
 In the diagram below you see a very simplified view: What happens inside the browserified app.js file?
 The blue objects inside are the _iofchart.html_ file and the _iofchart.js_ javascript module. The brown objects do represent the usage of the library **IBMIoTF** and **Chart.js**.
 
@@ -201,7 +205,7 @@ The most **IoT relevant events** are the blue messages. These messages do repres
 
 ![very-simplified-get-iot-data-sequence](https://github.com/thomassuedbroecker/browserfied-ibmiotf-webapplication/blob/master/docs/very-simplified-get-iot-data-sequence.png)
 
-
+---
 ### 3.2 Create Browserified 'app.js' file
 
 To create the browserified **'app.js'** file for the usage in the WebApplication, run the bash file in **rootfolder/public/app/bin/browserify.sh**.
@@ -214,7 +218,7 @@ your chrome browser. See the following picture:
 
 ![Debug WebApplication](https://github.com/thomassuedbroecker/browserfied-ibmiotf-webapplication/blob/master/docs/debug-browserifed-application.png)
 
-
+---
 ### 3.3 Run the WebApplication using Node.JS local or in Node.JS on Bluemix
 
 If you have done all needed configurations you run the WebApplication,
@@ -271,6 +275,7 @@ This will create a the Cloud Foundry application.
 
 _Note:_ Do not forget to run set 3.2 before running the application.
 
+---
 ### 3.4 Check the WebApplication
 
 You can run following links:
