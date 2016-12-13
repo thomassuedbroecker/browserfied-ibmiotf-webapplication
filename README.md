@@ -8,7 +8,8 @@
 
 [3. How to setup the sample?](https://github.com/thomassuedbroecker/browserfied-ibmiotf-webapplication#3-how-to-setup-this-sample)
 
- [3.1 Create a IBM watson service in bluemix and configure the code for a IoT Chart](https://github.com/thomassuedbroecker/browserfied-ibmiotf-webapplication#31-create-a-ibm-watson-service-in-bluemix-and-configure-the-code-ibm-iotfchartjs)
+   [3.1 Create a IBM watson service in bluemix and configure the code for a IoT Chart](https://github.com/thomassuedbroecker/browserfied-ibmiotf-webapplication#31-create-a-ibm-watson-service-in-bluemix-and-configure-the-code-ibm-iotfchartjs)
+
    [3.2 Create a the browserfied app.js file](https://github.com/thomassuedbroecker/browserfied-ibmiotf-webapplication#32-create-browserified-appjs-file)
 
    [3.3 Run the nodejs application local and on bluemix](https://github.com/thomassuedbroecker/browserfied-ibmiotf-webapplication#33-run-the-webapplication-using-nodejs-local-or-in-nodejs-on-bluemix)
