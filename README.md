@@ -182,6 +182,16 @@ Using **updateData** to format the data for the chart and update with **iotChart
 The image shows a simplified view of the webapplication which is using the _browserified app.js_ file and the content of the _browserified app.js_.
 ![simplified-overview-of-the-dependencies](https://github.com/thomassuedbroecker/browserfied-ibmiotf-webapplication/blob/master/docs/simplified-overview-of-the-dependencies.png)
 
+In the diagram below you see a very simplified view: What happens inside the browserified app.js file?
+
+
+The blue objects inside are the _iofchart.html_ file and the _iofchart.js_ javascript module. The brown objects do represent the usage of the library **IBMIoTF** and **Chart.js**.
+
+The most **IoT relevant events** are the blue messages. These messages do representing the waiting for the **event connect** and **device event**. Inside these events we register to the devices to a specific type, we defined before and we using to payload of the devices events to show in our html page as simple message or in the chart.
+
+![very-simplified-get-iot-data-sequence](https://github.com/thomassuedbroecker/browserfied-ibmiotf-webapplication/blob/master/docs/very-simplified-get-iot-data-sequence.png)
+
+
 ### 3.2 Create Browserified 'app.js' file
 
 To create the browserified **'app.js'** file for the usage in the WebApplication, run the bash file in **rootfolder/public/app/bin/browserify.sh**.
