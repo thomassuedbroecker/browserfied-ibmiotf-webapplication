@@ -1,5 +1,8 @@
 # Using the AngularJS + Browserify Project Template to implement a IBM IoTF WebApplication
 
+Here is a youtube video related to
+[![Here is a youtube video related to](https://github.com/thomassuedbroecker/browserfied-ibmiotf-webapplication/blob/master/docs/youtubeicon.png)](https://youtu.be/izBipRUdezg)
+
 **Content Overview**
 
 [1. Objective](https://github.com/thomassuedbroecker/browserfied-ibmiotf-webapplication#1-objective-using-browserify)
