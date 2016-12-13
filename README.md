@@ -14,7 +14,7 @@
 
    [3.3 Run the nodejs application local and on bluemix](https://github.com/thomassuedbroecker/browserfied-ibmiotf-webapplication#33-run-the-webapplication-using-nodejs-local-or-in-nodejs-on-bluemix)
 
- [3.4 Check the WebApplication](https://github.com/thomassuedbroecker/browserfied-ibmiotf-webapplication#34-check-the-webapplication)
+   [3.4 Check the WebApplication](https://github.com/thomassuedbroecker/browserfied-ibmiotf-webapplication#34-check-the-webapplication)
 
 ---
 
@@ -80,6 +80,7 @@ _Note:_ **Before you begin.** The steps do only contain the information for a  M
 ### 3.1 Create a IBM Watson Service in Bluemix and configure the code IBM IoTF/Chart.js
 
 **Create Service and configure service**
+
 [Follow the steps creating IBM Watson IoT in Bluemix](https://console.ng.bluemix.net/catalog/services/internet-of-things-platform/?taxonomyNavigation=apps)
 
 To Configure the service you can follow the steps written in my other sample [3.1.2 Configure the Internet of Things Foundation Service]( https://github.com/thomassuedbroecker/iOSMQTT-Bluemix-IoT-NodeRED#312-configure-the-internet-of-things-foundation-service)
@@ -247,7 +248,16 @@ also by using the bash file **start-sample.sh** the file does all needed tasks:
 
 Here are the
 
-_npm installation_
+_npm the installations for the nodejs server and the webapplication_
+
+In the **rootfolder/** run the npm installation.
+To install all needed npm packages.
+
+```sh
+    rootfolder/$ sudo npm install
+    Password: *******
+```
+
 In the **rootfolder/public** run the npm installation.
 To install all needed npm packages.
 
