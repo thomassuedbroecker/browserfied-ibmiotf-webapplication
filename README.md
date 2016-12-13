@@ -82,11 +82,14 @@ _Note:_ **Before you begin.** The steps do only contain the information for a  M
 [Follow the steps creating IBM Watson IoT in Bluemix](https://console.ng.bluemix.net/catalog/services/internet-of-things-platform/?taxonomyNavigation=apps)
 
 To Configure the service you can follow the steps written in my other sample [3.1.2 Configure the Internet of Things Foundation Service]( https://github.com/thomassuedbroecker/iOSMQTT-Bluemix-IoT-NodeRED#312-configure-the-internet-of-things-foundation-service)
+
 only following the **3.1.2 chapter**.
+
 ---
 **Configure code**
 
 _Code in 'rootfolder/public/.ibmiotf.json'_
+
 Based on your configuration you have to configure the **rootfolder/public/.ibmiotf.json**.
 This file contains all login information which is used by the IBMIoTF library.
 
@@ -101,6 +104,7 @@ This file contains all login information which is used by the IBMIoTF library.
 ```
 ---
 _Code in rootfolder/public/app/js/controller/iot.js and rootfolder/public/app/js/controller/iotchart.js_
+
 In the WebApplication modules ***rootfolder/public/app/js/controller/iot.js*** and ***rootfolder/public/app/js/controller/iotchart.js*** you have to configure to apply your device type information.
 ```javascript
      var client = require('ibmiotf');
@@ -136,6 +140,7 @@ In the ***rootfolder/public/app/js/controller/iotchart.js*** you can change the 
           ]
      };
 ```
+
 ---
 In the ***rootfolder/public/app/js/controller/iotchart.js*** fyou can change to apply to your needs, to show the values you want to display, as your IoT Information in the chart. In my case the payload of my device looks like this.
 
@@ -173,7 +178,7 @@ In the ***rootfolder/public/app/js/controller/iotchart.js*** fyou can change to 
         "customProps":{"turnSignal":"OFF"}
     }]
 ```
-
+---
 I configure the output for the chart in the ***rootfolder/public/app/js/controller/iotchart.js*** file, inside the variable **var updateData = function(oldData,dataList)**
 This is defined based on my payload the values, in the chart you can see the value of the 'car **speed**.'
 
@@ -181,6 +186,8 @@ This is defined based on my payload the values, in the chart you can see the val
       var newDataA = dataList[0].speed; // YOUR PAYLOAD INFORMATION
       var newDataB = dataList[1].speed; // YOUR PAYLOAD INFORMATION
 ```
+
+---
 Getting payload and create json object.
 Using **updateData** to format the data for the chart and update with **iotChart.update**.
 
@@ -197,12 +204,14 @@ Using **updateData** to format the data for the chart and update with **iotChart
           $scope.$apply();
       });
 ```
+---
 
 **Simplified 'component dependencies' view of the webapplication**
 
 The image shows a simplified view of the webapplication which is using the _browserified app.js_ file and the content of the _browserified app.js_.
 ![simplified-overview-of-the-dependencies](https://github.com/thomassuedbroecker/browserfied-ibmiotf-webapplication/blob/master/docs/simplified-overview-of-the-dependencies.png)
 
+---
 **Simplified 'sequence get iot data' view of the webapplication**
 
 In the diagram below you see a very simplified view: What happens inside the browserified app.js file?
@@ -245,6 +254,8 @@ To install all needed npm packages.
     rootfolder/public$ sudo npm install
     Password: *******
 ```
+---
+
 _run the node js server with the WebApplication_
 To run the web application local you can start:
 ```sh
@@ -255,6 +266,8 @@ To create the Bluemix appliction you can just run:
 ```sh
     rootfolder/docs$ ./push-and-log.sh
 ```
+
+---
 Make sure you have configured both following files:
 
 a) The **rootfolder/docs/push-and-log.sh** file.
