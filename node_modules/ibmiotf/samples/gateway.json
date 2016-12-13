@@ -1,8 +1,0 @@
-{
-  "org": "xxxxxx",
-  "domain": "internetofthings.ibmcloud.com",
-  "type": "gw",
-  "id": "gw01",
-  "auth-method" : "token",
-  "auth-token" : "xxxxxxxxxxxxxxxx"
-}
