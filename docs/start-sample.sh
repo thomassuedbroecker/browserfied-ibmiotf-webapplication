@@ -10,15 +10,21 @@ space_name="YOUR BLUEMIX SPACE"
 application_name="browserfied-ibmiotf-webapplication"
 
 pwd
-echo "--> 01. Install the npm packages for the webapplication"
+echo "--> 01. Install the npm packages for the node.js server"
 echo "**********************************************"
 echo ""
 cd ..
+sudo npm install
+
+pwd
+echo "--> 02. Install the npm packages for the webapplication"
+echo "**********************************************"
+echo ""
 cd public
 sudo npm install
 echo ""
 pwd
-echo "--> 02. Create browserified app.js file"
+echo "--> 03. Create browserified app.js file"
 echo "**********************************************"
 echo ""
 cd bin
@@ -28,7 +34,7 @@ pwd
 cd ..
 pwd
 ls ..
-echo "--> 03. Push the application into Bluemix for following configuration:"
+echo "--> 04. Push the application into Bluemix for following configuration:"
 echo "**********************************************"
 echo "a. User: '$user' API: '$bluemix_api'"
 echo "b. Organization: '$organization_name'"
